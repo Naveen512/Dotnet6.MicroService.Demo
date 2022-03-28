@@ -1,0 +1,9 @@
+version: '3.8'
+
+services:
+  rabbitmq:
+    image: rabbitmq:3-management
+    ports:
+      - 15672:15672
+      - 4001:5672
+    container_name: myrabbitcontainer
